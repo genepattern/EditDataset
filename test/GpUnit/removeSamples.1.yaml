@@ -1,0 +1,12 @@
+#
+# ant -f ${GPUNIT_HOME}/build.xml -Dgpunit.diffStripTrailingCR="--strip-trailing-cr" -Dgp.host="gp-beta-ami.genepattern.org" -Dgp.url="https://cloud.genepattern.org" -Dgp.user="ted-dev" -Dgp.password="" -Dgpunit.testfolder=`pwd` gpunit
+#
+name: removesamples.1
+module: EditDataset
+params: 
+    "gct.file": https://datasets.genepattern.org/data/all_aml/all_aml_test.gct
+    "removelist": https://datasets.genepattern.org/data/test_data/EditDataset/removelist.txt 
+    "extension":  "smallerDataset"
+assertions:
+    jobStatus: success
+
