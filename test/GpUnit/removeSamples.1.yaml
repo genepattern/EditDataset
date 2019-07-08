@@ -9,4 +9,7 @@ params:
     "extension":  "smallerDataset"
 assertions:
     jobStatus: success
-
+    diffCmd: diff -q
+    files:
+        "smallerDataset.gct":
+		diff: "output/all_aml_test_test1output.gct"
