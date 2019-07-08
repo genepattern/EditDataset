@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html class="">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>EditDataset</title>
+  <link href="./assets/docstyle.css" media="all" rel="stylesheet">
+  <style type="text/css"></style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta content="authenticity_token" name="csrf-param">
+</head>
+<body >
+
+<script>
+</script>
+	
+	<div class="gp-content-header fluid">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12">
+					<h1><big>EditDataset</big></h1>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+				
+
+<dl class="dl-horizontal">
+	<dt>LSID</dt>
+	<dd>urn:lsid:broad.mit.edu:cancer.software.genepattern.module.analysis:00394</dd>
+	<dt>Author(s)</dt>
+	<dd>Ted Liefeld; UCSD. Based on prior work by Barbara Weir; Broad Institute</dd>
+	<dt>Contact(s)</dt>
+	<dd><p>jliefeld @ ucsd.edu</p>
+</dd>
+</dl>
+
+
+<hr>
+
+<h2>Introduction</h2>
+
+<p>
+Edit Dataset (based on the GParc module removeSamples by Barbara Weir) is a GenePattern module that removes user-defined samples from a dataset. The user inputs their dataset as a GCT file, along with a text file containing the list of samples to be removed. The module outputs a GCT file containing the dataset with the user-defined samples removed.
+</p>
+
+<h2>Input Files</h2>
+
+<ol>
+	<li>GCT File<br>
+	Data file containing samples to be removed in a GCT file format.</li>
+	<li>Remove List<br>
+	Text file containing the list of samples to remove. Each sample should be on a separate line and must match a sample name in the file exactly.</li>
+</ol>
+
+<h2>Output Files</h2>
+
+<ol>
+	<li>Data with samples removed   <i>[extension].gct</i><br>
+	A GCT file containing the user-inputted dataset with the samples in the removelist text file removed from the dataset.</li>
+</ol>
+
+<h2>Example Data</h2>
+
+<h2>Requirements</h2>
+
+<p>GenePattern 3.9.11 or later that uses dockerized modules.</p>
+
+
+<h2>Parameters</h2>
+
+<table class="table table-striped">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>gct file*</td>
+			<td>Data file containing samples to be removed in a GCT file format.</td>
+		</tr>
+		<tr>
+			<td>removelist*</td>
+			<td>Text file containing the list of samples to remove. Each sample should be on a separate line and must match a sample name in the file exactly.</td>
+		</tr>
+		<tr>
+			<td>extension*</td>
+			<td>User defined prefix for the output file.</td>
+		</tr>
+	</tbody>
+</table>
+
+<p><span style="color: red;">*</span> - required</p>
+			</div>
+		</div>
+	</div>
+
+	</div>
+	<footer class="container fluid gp-footer">
+	<div class="fluid text-center">©2006-2019 Regents of the University of California &amp; The Broad Institute of MIT and Harvard</div> 
+</footer>
+
+
+
+<div id="feedly-mini" title="feedly Mini tookit"></div></body></html>
