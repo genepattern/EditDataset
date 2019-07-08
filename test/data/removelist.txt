@@ -1,0 +1,6 @@
+ALL 19769 TA+ Norel
+ALL 406 TA+ (ML) Norel
+ALL 4466 Norel
+ALL 1245 TA- Norel
+ALL 16125 TA- Norel
+ALL 23368 TA- Norel
